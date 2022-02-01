@@ -9,11 +9,12 @@ const query =
 	(preload: boolean) =>
 	<Data = any>(
 		_key: Key,
-		fetcher: Fetcher<Data> | undefined,
+		_fetcher: Fetcher<Data> | undefined,
 		userConfig?: Config<Data>,
 	): Await<Data> => {
 		const config = getConfig(userConfig);
 		const cache = globalState.get(config.cacheProvider)!;
+		const fetcher = _fetcher ? _fetcher : config.fetcher;
 
 		const { key, args } = serialize(_key);
 
@@ -41,8 +42,7 @@ const query =
 			error: undefined,
 			promise:
 				// Execute the promise
-				config
-					.fetcher(...args)
+				fetcher(...args)
 					// When it resolves, store its value
 					.then((response: Data) => (entry.response = response))
 					// Remove the entry if a lifespan was given

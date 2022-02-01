@@ -1,11 +1,8 @@
-MIT License
-
 Copyright (c) 2022 Henry Gressmann
+Copyright (c) 2021 Paul Henschel (https://github.com/pmndrs/suspend-react)
+Copyright (c) 2019 ZEIT (https://github.com/vercel/swr)
 
 Heavily inspired by and based in parts on:
-
-- https://github.com/pmndrs/suspend-react, Copyright (c) 2021 Paul Henschel, also licensed under the MIT License
-- https://github.com/vercel/swr, Copyright (c) 2019 ZEIT, also licensed under the MIT License
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
