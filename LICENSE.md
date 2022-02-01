@@ -6,8 +6,6 @@ Copyright (c) 2021 Paul Henschel (https://github.com/pmndrs/suspend-react)
 
 Copyright (c) 2019 ZEIT (https://github.com/vercel/swr)
 
-Heavily inspired by and based in parts on:
-
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
