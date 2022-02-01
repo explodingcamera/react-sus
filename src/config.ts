@@ -7,8 +7,9 @@ export interface InternalConfig<T = any> {
 
 export type Config<T = any> = Partial<InternalConfig<T>>;
 
-export const getConfig = (userConfig: Config): InternalConfig => ({
-	cacheProvider: new Map(),
+const defaultCacheProvider = new Map();
+export const getConfig = (userConfig: Config = {}): InternalConfig => ({
+	cacheProvider: defaultCacheProvider,
 	fetcher: fetch,
 	...userConfig,
 });
