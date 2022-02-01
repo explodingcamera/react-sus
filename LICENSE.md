@@ -1,5 +1,9 @@
+MIT License
+
 Copyright (c) 2022 Henry Gressmann
+
 Copyright (c) 2021 Paul Henschel (https://github.com/pmndrs/suspend-react)
+
 Copyright (c) 2019 ZEIT (https://github.com/vercel/swr)
 
 Heavily inspired by and based in parts on:
