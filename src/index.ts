@@ -1,5 +1,19 @@
-export type helloWorld = 'Hello World';
+import { Config, getConfig } from './config.js';
+import { serialize } from './serialize.js';
+import { globalState } from './state.js';
+import { Fetcher, Key } from './types.js';
 
-const text: helloWorld = 'Hello World';
+export const sus = <Data = any>(
+	_key: Key,
+	fetcher: Fetcher<Data> | undefined,
+	userConfig: Config<Data>,
+) => {
+	const config = getConfig(userConfig);
+	const state = globalState.get(config.cacheProvider);
 
-console.log(text);
+	const { key, args } = serialize(_key);
+
+	return {};
+};
+
+export { Config, Fetcher, Key };
