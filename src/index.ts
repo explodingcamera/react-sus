@@ -29,10 +29,7 @@ const query =
 
 		const fetcher = _fetcher ? _fetcher : config.fetcher;
 
-		if (!fetcher)
-			throw new Error(
-				'no fetcher provided (fetch might not be available as a fallback on node.js)',
-			);
+		if (!fetcher) throw new Error('no fetcher provided');
 
 		const { key, args } = serialize(_key);
 		const existingEntry = cache.requestCache.get(key);
