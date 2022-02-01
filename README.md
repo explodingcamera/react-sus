@@ -4,12 +4,8 @@
 
 <h1>
   react-sus
-  <a href="https://bundlephobia.com/result?p=react-sus">
-  <img src="https://img.shields.io/bundlephobia/minzip/react-sus?label=bundle%20size&style=flat&colorA=000000&colorB=000000"/>
-  </a>
-  <a href="https://www.npmjs.com/package/react-sus">
-  <img src="https://img.shields.io/npm/v/react-sus?style=flat&colorA=000000&colorB=000000"/>
-  </a>
+  <a href="https://bundlephobia.com/result?p=react-sus"><img src="https://img.shields.io/bundlephobia/minzip/react-sus?label=bundle%20size&style=flat&colorA=000000&colorB=000000"/></a>&nbsp;
+  <a href="https://www.npmjs.com/package/react-sus"><img src="https://img.shields.io/npm/v/react-sus?style=flat&colorA=000000&colorB=000000"/></a>
 </h1>
 <h3></h3>
 
