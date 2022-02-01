@@ -8,7 +8,12 @@ import { createRoot } from 'react-dom';
 
 import { sus } from './../src/index.js';
 
-void tap.test('basic functionality', t => {
+const wait = async (ms: number) =>
+	new Promise(resolve => {
+		setTimeout(resolve, ms);
+	});
+
+void tap.test('basic functionality', async t => {
 	const SomeComponent = () => {
 		const data = sus<string>('test', async () => Promise.resolve('resolved'));
 		return <div>{data}</div>;
@@ -23,7 +28,6 @@ void tap.test('basic functionality', t => {
 	const el = document.createElement('div');
 	createRoot(el).render(<App />);
 
-	setTimeout(() => {
-		t.equal(el.innerHTML, `<div>lol</div>`);
-	}, 100);
+	await wait(100);
+	t.matchSnapshot(el.innerHTML, 'resolved');
 });
