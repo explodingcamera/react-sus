@@ -46,9 +46,14 @@ const App = () => (
 
 ## API
 
-```tsx
-// simplified api
+<table>
+<tr>
+<td> Simplified API </td>
+</tr>
+<tr>
+<td>
 
+```tsx
 type sus = <Data>(
   key: Key, // anything that can be serialized to a string
   fetcher?: Fetcher | undefined,
@@ -60,6 +65,10 @@ interface Config {
   cacheProvider: Cache; // any Map-like function
 }
 ```
+
+</td>
+</tr>
+</table>
 
 Any Component using this function needs to be wrapped in an `<Suspense></Suspense>` block. Once the promise is started, control will be given back to react until the promise resolves and the actual data is returned.
 
@@ -92,7 +101,3 @@ This project seeks to combine the simplicity of swr with react-query's feature s
 ## Related Projects
 
 - [snowstorm](https://github.com/explodingcamera/snowstorm) - The lightning-fast and minimalist React Tool
-
-```
-
-```
