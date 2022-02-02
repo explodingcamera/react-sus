@@ -5,8 +5,8 @@ import { Key, Arguments } from './types.js';
 const cyrb53 = (str: string, seed = 0) => {
 	const [a, b, c, d] = [2654435761, 1597334677, 2246822507, 3266489909];
 
-	let h1 = 0xdeadbeef ^ seed;
-	let h2 = 0x41c6ce57 ^ seed;
+	let h1 = 3735928559 ^ seed;
+	let h2 = 1103547991 ^ seed;
 	for (let i = 0, ch; i < str.length; i++) {
 		ch = str.charCodeAt(i);
 		h1 = Math.imul(h1 ^ ch, a);
