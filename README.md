@@ -15,7 +15,7 @@ Minimal Suspense-based data-fetching (Currently in development and not productio
 
 <table>
 <tr>
-<td> TypeScript </td> <td> JavaScript </td>
+<td> TypeScript </td>
 </tr>
 <tr>
 <td>
@@ -30,25 +30,6 @@ interface User {
 
 const SomeComponent = ({ userID }: { userID: string }) => {
   const data = sus<User>(`https://api.example.com/user/${userID}`);
-  return <div>{data.username}</div>;
-};
-
-const App = () => (
-  <Suspense fallback={<div>Loading...</div>}>
-    <SomeComponent userID={"example"} />
-  </Suspense>
-);
-```
-
-</td>
-<td>
-
-```jsx
-import { Suspense } from "react";
-import { sus } from "react-sus";
-
-const SomeComponent = ({ userID }) => {
-  const data = sus(`https://api.example.com/user/${userID}`);
   return <div>{data.username}</div>;
 };
 
