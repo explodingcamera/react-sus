@@ -1,6 +1,6 @@
 {
   "name": "react-sus",
-  "version": "0.1.3",
+  "version": "0.1.4-1",
   "description": "minimal suspense-based data-fetching",
   "license": "MIT",
   "author": "<mail@henrygressmann.de>",
@@ -8,7 +8,7 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "files": [
-    "./lib/"
+    "lib/"
   ],
   "scripts": {
     "build": "npm run build:esbuild && npm run types",
