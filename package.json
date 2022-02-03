@@ -1,6 +1,6 @@
 {
   "name": "react-sus",
-  "version": "0.1.4-1",
+  "version": "0.1.4",
   "description": "minimal suspense-based data-fetching",
   "license": "MIT",
   "author": "<mail@henrygressmann.de>",
