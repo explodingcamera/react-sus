@@ -6,7 +6,9 @@ import { Fetcher, Key } from './types.js';
 type Await<T> = T extends Promise<infer V> ? V : never;
 
 export const isResponse = (data: any): data is Response =>
-	typeof data === 'object' && Response && data instanceof Response;
+	typeof data === 'object' &&
+	typeof Response === 'object' &&
+	data instanceof Response;
 
 let retrycount = 0;
 
